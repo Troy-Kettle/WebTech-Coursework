@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troy Kettle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Troy Kettle <small class="muted" id="smaller"> <br> 2101 3075 01 <br> Web Technologies Coursework </small>
+        </h1>
+        <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+    </div>
+
+    <div id="Projects" class="card-group pb-3 border-bottom">
+        <div class="card">
+            <img id="Project1Image" class="card-img-top text-dark" src="prac2.jpg" alt="Card image cap" height="280"
+                width="180" onclick="link()">
+            <div class="card-body">
+                <h5 class="card-title text-dark">CV</h5>
+                <p class="card-text text-dark">This is my CV web page (practical 2)</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="Project2Image" class="card-img-top text-dark" src="Weather.jpg" alt="Card image cap" height="280"
+                width="180" onclick="link2()">
+            <div class="card-body">
+                <h5 class="card-title text-dark">Rendering weather data</h5>
+                <p class="card-text text-dark">This is a web page is to demonstrate how we can manipulate data and
+                    graphs using Java Script (Practical 4)</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="Project3Image" class="card-img-top text-dark" src="login.jpg" alt="Card image cap" height="280"
+                width="180" onclick="link3()">
+            <div class="card-body">
+                <h5 class="card-title text-dark">PHP login system</h5>
+                <p class="card-text text-dark">This is a php login system that shows how php can be used to store data
+                    and also provide secuirty (Practical 6)</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="Projects2" class="card-group border-bottom p-5 ml-5 mr-5">
+        <div class="card">
+            <img id="Project1Image" class="card-img-top text-dark" src="Main.png" alt="Card image cap" height="60%" width="25%" onclick="link4()">
+            <div class="card-body">
+                <h5 class="card-title text-dark">Submit PHP file</h5>
+                <p class="card-text text-dark">This is a Java project I made in university to create an app similar
+                    to
+                    the orignal paint in Java using JFrames and JPannels</p>
+                    <a href="/prin/x5s42/webTechCoursework/main.php">
+                        <button type="button" class="btn btn-secondary">View</button>
+                    </a>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        </div>
+    <div class="ml-5" id="footer">
+        <br><br>
+        <p>Troy Kettle <br> 2101 3075 01</p>
+        <br>
+</body>
+
+</html>

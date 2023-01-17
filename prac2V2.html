@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="CV.css">
+</head>
+
+<body class="container bg-dark text-light" onload="toggle(this); toggle2(this);">
+    <div id="heading" class="p-4">
+        <header class="">
+            <h1 class="text-center">Joe Stevens</h1>
+            <h5 class="text-center p-2 ">Computer Science Student / Web Developer</h5>
+        </header>
+    </div>
+
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-light fixed-top position-sticky rounded">
+        <a class="navbar-brand" href="#heading">Joe Stevens</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About_Me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Qualifications">Qualifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ModuleTables">Modules</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ContactSection">Contact Me</a>
+                </li>
+        </div>
+    </nav>
+
+    <div id="AboutMe" class="p-3 text-left pt-5 border-bottom">
+        <h3 id="About_Me">About Me</h3>
+        <p>
+            My name is Joe Stevens, I am currently studying computer science with software engineering at Keele
+            University.
+            Within computer science my interests are in<br> software engineering and web
+            development, hence making this website. I studied Maths at A Level which enable me to stumble across the
+            overlap
+            with computer science sparking my interest.
+            <br>At this moment in time I am looking to do a placement year within the fields of software engineering or
+            web
+            development.<br>
+            Upon completion of my undergraduate degree in computer science I intend, at the moment, to further my study
+            with
+            a master’s degree in a closely related
+            topic.<br><br>
+            Phone: 07534444883<br>
+            Email: JoeStevens@gmail.com<br>
+            <a href="https://github.com/Troy-Kettle">GitHub</a><br>
+            <a href="https://www.linkedin.com/in/troy-kettle-8b0a8b219/">Linkedin</a><br><br>
+            Please use the <a href=#contact> Contact Me </a> section for any project, help required or other computer
+            science related questions.
+        </p>
+    </div>
+
+    <div id="Qualifications" class="p-3 text-left border-bottom">
+        <h3>Qualifications</h3>
+        <div id="A_Levels">
+            <h4>A levels</h4>
+            <ul>
+                <li>Maths: A</li>
+                <li>Physics: A</li>
+                <li>Chemistry: A</li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                At the moment I am working towards my undergraduate degree in Computer Science with Software Engineering
+                at
+                Keele University.
+            </p>
+        </div>
+        <div id="WorkExperience">
+            <h4>Work Experience</h4>
+            <ul>
+                <li>Computer Science Subsitute Teacher</li>
+                <li>Volunteer Marshal at Parkrun UK</li>
+                <li>Virtual Software Engineering Intership - JPMogran</li>
+            </ul>
+        </div>
+        <div id="Skills">
+            <h4>Skills</h4>
+            <ul>
+                <li>HTML,CSS and JavaScript - Excellent</li>
+                <li>Java - Very Good</li>
+                <li>C++ - Good</li>
+                <li>Python - Average</li>
+                <li>Linux - Very Good</li>
+                <li>Problem Solving</li>
+                <li>Communication</li>
+            </ul>
+        </div>
+        <br>
+        <h3 class="p-3 border-top">Projects:</h3>
+    </div>
+
+    <div id="Projects" class="card-group pb-3 border-bottom">
+        <div class="card">
+            <img id="Project1Image" class="card-img-top text-dark" src="Project1.jpg" alt="Card image cap" height="280"
+                width="180" onclick="link()">
+            <div class="card-body">
+                <h5 class="card-title text-dark">Java Gui Project</h5>
+                <p class="card-text text-dark">This is a Java project I made in university to create an app similar to
+                    the orignal paint in Java using JFrames and JPannels</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="Project2Image" class="card-img-top text-dark" src="Project2.jpg" alt="Card image cap" height="280"
+                width="180" onclick="link2()">
+            <div class="card-body">
+                <h5 class="card-title text-dark">Portfolio Website</h5>
+                <p class="card-text text-dark">This is a website I made in my spare time using html, Bootstrap, CSS and
+                    JavaScript. This
+                    was made in my spare time to demenstrate my web development ability.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img id="Project3Image" class="card-img-top text-dark" src="Project3.jpg" alt="Card image cap" height="280"
+                width="180" onclick="link3()">
+            <div class="card-body">
+                <h5 class="card-title text-dark">JavaScript Calculator</h5>
+                <p class="card-text text-dark">This is A Java Sript project that i made in University. It consists of a
+                    simple calculator using html for the input boxes and Java Script for the functionality of the
+                    calculator</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <div id="ModuleTables" class="p-4 text-left border-bottom">
+        <div>
+            <br>
+            <h3>Modules:</h3>
+        </div>
+        <br>
+        <div id="Year1Button">
+            <button type="submit" class="btn btn-secondary" onclick="toggle(this);">Year 1 Modules</button>
+        </div>
+        <br>
+        <br><br>
+        <div id="Modules">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Year 1 Modules</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Pass/Fail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-10024.htm">Programming 1 </a></td>
+                        <td>1</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-10025.htm">Cyber-Crime </a></td>
+                        <td>1</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-10033.htm">Systems Architecture</a></td>
+                        <td>1</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-10029.htm">Fudementals of Comp</a></td>
+                        <td>1</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-10026.htm">Animation</a></td>
+                        <td>1</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-10035.htm">Natural Computation</a></td>
+                        <td>1</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-10056.htm">CCC</a></td>
+                        <td>1</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-10040.htm">Interaction Design</a></td>
+                        <td>1</td>
+                        <td>Pass</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="Year2Button">
+            <button type="submit" class="btn btn-secondary" onclick="toggle2(this);">Year 2 Modules</button>
+        </div>
+
+        <div id="Modules2">
+            <br>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Year 2 Modules</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Pass/Fail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-20037.htm">Programming 2</a></td>
+                        <td>2</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-20021.htm">Web Technolgies</a></td>
+                        <td>2</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-20038.htm">Mobiles Development</a></td>
+                        <td>2</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-20043.htm">AI / CI</a></td>
+                        <td>2</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-20047.htm">Individual Study Topic</a></td>
+                        <td>2</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-20002.htm">Database Systems</a></td>
+                        <td>2</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-20004.htm">Programming Practices</a></td>
+                        <td>2</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td><a href="https://www.keele.ac.uk/catalogue/current/csc-20041.htm">Software Engineering<a href="https://www.keele.ac.uk/catalogue/current/csc-20037.htm"></a></td>
+                        <td>2</td>
+                        <td>NA</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        <br><br>
+    </div>
+
+    <div id="ContactSection" class="p-3 border-bottom">
+        <h3 id="contact">Contact</h3>
+        <p>Get in touch and talk about anything computer science.</p>
+        <form id="contactBox" action="mailto:troykettle19@gmail.com" subject='Subject' &body='Comment' for the bodyenctype="text/plain" >
+            <label>
+                <input type="text" placeholder="Name" required name="Name">
+            </label><br><br>
+            <label>
+                <input class="Subject" type="text" placeholder="Subject" required name="Subject">
+            </label><br><br>
+            <button type="submit" class="btn btn-secondary" onclick="openMail()"> Submit</button>
+            <br><br>
+            <input type="reset" value="Reset" class="btn btn-secondary">
+            <br><br><br>
+        </form>
+    </div>
+
+    <br>
+    <div class="text-center" style="background-color: rgba(0, 0, 0, 0.03);">
+        <br><br>
+        JoeStevens@gmail.com
+        <br><br><br><br>
+    </div>
+</body>
+
+</html>

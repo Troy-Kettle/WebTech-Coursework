@@ -1,0 +1,41 @@
+#navigation{
+    background: #838996;
+    top: 0.6%;
+}
+
+#Project1Image {
+    border-radius: 5px;
+    transition: 0.7s;
+}
+#Project1Image:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+#Project2Image {
+    border-radius: 5px;
+    transition: 0.7s;
+}
+
+#Project2Image:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+#Project3Image {
+    border-radius: 5px;
+    transition: 0.7s;
+}
+
+#Project3Image:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+#searchBar {
+    margin-right: 0%;
+}
+
+#blank {
+    color: #838996;
+}

@@ -1,0 +1,99 @@
+<html>
+<script src="dailyweatherdata.js"></script>
+<script src="weatherforecast.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+  integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+<style>
+  canvas {
+    width: 1000px !important;
+    height: 400px !important;
+  }
+</style>
+
+<body>
+    <h1 class="p-4 text-centre">Troy Kettle <small class="muted" id="smaller"> <br> 2101 3075 01 <br> Web Technologies Coursework </small></h1>
+<div class="p-4">
+  Longitude: <label id="lon"></label>
+
+  <canvas id="myChart"></canvas>
+
+  <label for="typeselector">Choose a graph type:</label>
+  <select name = "typeselector" id ="typeselector">
+    <optgroup value label="Select Type"></optgroup>
+    <option value="bar">Bar</option>
+    <option value="line">Line</option>
+    <option value="pie">Pie</option>
+  </select>
+</body>
+
+<br><br>
+
+</div>
+<script>
+  //TODO: Task 1:
+  var daily = JSON.parse(dailydata_stoke);
+  document.getElementById('lon').innerHTML = daily.coord.lon;
+
+  //TODO: Task 2, 3 and 4
+  var forecast = JSON.parse(forecast_stoke);
+  this.dateList = forecast.list.map(list => {
+    return list.dt_txt;
+  });
+
+  this.temperatureList = forecast.list.map(list => {
+    return list.main.temp;
+  });
+
+  this.humidityList = forecast.list.map(list => {
+    return list.main.humidity;
+  });
+
+  this.feels_likeList = forecast.list.map(list => {
+    return list.main.feels_like;
+  });
+
+
+  var ctx = document.getElementById('myChart').getContext('2d');
+  let chart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: this.dateList,
+      datasets: [
+        {
+          label: "Temperature",
+          backgroundColor: "lightblue",
+          borderColor: "blue",
+          fill: false,
+          data: this.temperatureList
+        },
+        {
+          label: "Humidity",
+          backgroundColor: "red",
+          borderColor: "red",
+          fill: false,
+          data: this.humidityList,
+        },
+        {
+          label: "Feels Like",
+          backgroßundColor: "green",
+          borderColor: "green",
+          fill: false,
+          data: this.feels_likeList,
+        }
+      ]
+    }
+  })
+  var typeselector = document.getElementById('typeselector')
+
+
+  typeselector.onchange = function () {
+    chart.config.type = this.value; // change localStorage on change
+    console.log(this.value);
+    chart.update();}
+
+
+</script>
+
+</html>
